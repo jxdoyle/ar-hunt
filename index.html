@@ -41,13 +41,13 @@
 </head>
 <body style='margin: 0; overflow: hidden;'>
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
-        <a-entity>
-            <a-text id="welcome_message" value="Hello there" position="-150 40 -150" scale="120 120 120"></a-text>
+        <a-entity position="0 -10 0">
+            <a-box position="-1 0.5 -23" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+            <a-sphere position="0 1.25 -25" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+            <a-cylinder position="1 0.75 -23" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+            <a-plane position="0 0 -25.0" rotation="-90 0 0" width="7" height="7" color="#7BC8A4" shadow></a-plane>
 
-            <a-box position="-1 -2.5 -13" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-            <a-sphere position="0 -1.25 -15" radius="1.25" color="#EF2D5E" shadow></a-sphere>
-            <a-cylinder position="1 -2.75 -13" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
-            <a-plane position="0 -3 -15.0" rotation="-90 0 0" width="7" height="7" color="#7BC8A4" shadow></a-plane>
+            <a-text id="welcome_message" value="Hello there" position="-30 0 -150" scale="75 75 75"></a-text>
         </a-entity>
         
         <a-camera camera="fov: 60;" gps-camera rotation-reader></a-camera>
