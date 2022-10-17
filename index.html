@@ -12,6 +12,7 @@
         window.onload=()=>{
             navigator.geolocation.getCurrentPosition((position) =>{
                 document.querySelector('a-text').setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
+                document.querySelector('a-box').setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
             }); 
         }
     </script>
@@ -26,6 +27,9 @@
             rotation="0 180 0" 
             scale="120 120 120"
         ></a-text>
+        <a-box 
+            color="red"
+        ></a-box>
         <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
 </body>
